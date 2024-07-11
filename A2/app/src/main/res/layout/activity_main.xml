@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+
+    <!-- Description -->
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Attendance Tracker"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Track your class attendance effortlessly."
+        android:textSize="16sp" />
+
+    <!-- Image -->
+
+    <!-- Static Data: Last Attendance Record -->
+    <ImageView
+        android:id="@+id/imageViewExample"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/textViewDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/google" />
+
+    <TextView
+        android:id="@+id/textViewLastAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewExample"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Last attendance recorded on: June 28, 2024"
+        android:textSize="18sp" />
+
+    <!-- Static Data: Next Class Schedule -->
+    <TextView
+        android:id="@+id/textViewNextClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLastAttendance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Next class: July 1, 2024 at 10:00 AM"
+        android:textSize="18sp" />
+
+    <!-- Action Button -->
+    <Button
+        android:id="@+id/buttonAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNextClass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Mark Attendance" />
+</LinearLayout>
